@@ -20,7 +20,7 @@ layout = dbc.Col([
 
 # Sessão PERFIL -----------+ 
 
-                dbc.Button(id='botao-avatar',
+                dbc.Button(id='botao_avatar',
                     children=[html.Img(src='/assets/img_hom.png', id='avatar_change', alt='Avatar', className='perfil_avatar')
                 ], style={'background-color': 'transparent', 'border-color': 'transparent'}),            
 
@@ -215,7 +215,6 @@ layout = dbc.Col([
                 backdrop=True),
 
 
-
 # Sessão NAV                 
 
                 html.Hr(),
@@ -225,7 +224,6 @@ layout = dbc.Col([
                     dbc.NavLink("Extratos", href="/extratos", active="exact"),
                 ], vertical=True, pills=True, id='nav_buttons', style={"margin-bottom": "50px"}),  
                  
-
              ], id='sidebar_completa')                
 
 

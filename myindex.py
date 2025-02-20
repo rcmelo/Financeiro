@@ -28,7 +28,7 @@ app.layout = dbc.Container(children=[
 
 ], fluid=True),
 
-@app.callback(Output('page-content', 'childrem'), [Input('url', 'pathname')])
+@app.callback(Output('page-content', 'children'), [Input('url', 'pathname')])
 def render_page(pathname):
     if pathname == '/' or pathname == '/dashboards':
         return dashboards.layout
